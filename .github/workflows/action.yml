@@ -34,11 +34,15 @@ jobs:
       - name: Install dependencies
         run: |
           npm install
-      # build the apps
-      - name: build
-        run: |
-          npm run build
       # test the apps
       - name: testing
         run: |
           npm run coverage
+      # build the apps
+      - name: build
+        run: |
+          npm run build
+      # deploy the apps
+      - name: deploy
+        run: |
+          npm run deploy
